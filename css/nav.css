@@ -1,0 +1,10 @@
+div {cursor:default;}
+a {text-decoration:none; color:#000000;}
+#menu {list-style: none; margin-top: 50px; padding:5px;}
+#menu ul {margin:0px; padding:0px; list-style-type:none;}
+#menu li {float:left; width:120px; text-align:center;}
+#menu li ul{display:none; padding-top:3px;}
+#menu li:hover ul {display:block;}
+#menu li ul li {background-color:#2F2D49; border-bottom:1px solid #FFFFFF;}
+#menu li ul li a{color:#000000;}
+#menu li ul li:hover {background-color:#232323;}

@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+    border-collapse: collapse;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+}
+
+
+#page-nav {
+    height: 85px;
+    border-style: solid;
+    vertical-align: bottom;
+}
+#inhalt {
+    position:absolute;
+    top: 90px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    overflow-y:scroll;
+}
+
+#top-nav {
+    border-style: solid;
+}
