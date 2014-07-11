@@ -7,7 +7,7 @@
     system('git log --no-merges --date=iso8601 --pretty=format:"%ad : %s (%an)"');
     $tmp_text=ob_get_contents();
     ob_end_clean();
-    fopen("README","w");
+    $tmp_file=fopen("README","w");
     fwrite($tmp_file,"PHP_Bugiad.de\n");
     fwrite($tmp_file,"=============\n");
     fwrite($tmp_file,"test\n");
