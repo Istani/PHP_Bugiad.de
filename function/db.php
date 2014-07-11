@@ -73,6 +73,34 @@
 			}
 			return $return_array;
 		}
+		
+		function sql_insert_update($tabelle, $felder_werte_array) {
+			// Insert On Duplicate Key Update
+			$sql_felder="";
+			$return=false;
+			if (!is_array($felder_werte_array)) {
+				$this->error("<b>Programmfehler:</b><i>ID:10-T Fehler</i><br>Falsche Werte für INSERT Befehl!<br><pre>".var_dump($felder_werte_array)."</pre>");
+			}
+//			if (!is_array($key_werte_array)) {
+//				$this->error("<b>Programmfehler:</b><i>ID:10T Fehler</i><br>Falsche Werte für UPDATE Befehl!<br><pre>".var_dump($key_werte_array)."</pre>");
+//			}
+			foreach ($felder_werte_array as $key=>$value) {
+				if ($sql_felder=="") {
+					$sql_felder=$key."='".$vale."'";
+				} else {
+					$sql_felder=", ".$key."='".$vale."'";
+				}
+			}
+			if ($this->system == "mysql") {
+				$sql_string="INSERT INTO ".$tabelle." SET ".$sql_felder." ON DUPLICATE KEY UPDATE ".$sql_felder;
+				if ($query=mysql_query($sql_string, $this->database)) {
+					$return=true;
+				} else {
+					$this->error("<b>Abfrage:</b> <i>"+$sql_string+"</i><br>Konnte nicht ausgeführt werden!<br>".mysql_error());
+				}
+			}
+			return $return;
+		}
 
     }
 
