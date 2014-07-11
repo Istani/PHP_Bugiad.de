@@ -6,11 +6,11 @@
     <li <?php echo $class_button; ?>><a href="index.php" title="Home">Startseite</a></li>
     <li <?php echo $class_button; ?> id="Unternehmen"><a href="#" title="Unternehmen">Unternehmen</a>
 	<ul>
-	    <li <?php echo $class_drop; ?>><a href="index.php?seite=" title="Über Uns">Über Uns</a></li>
+	    <li <?php echo $class_drop; ?>><a href="index.php?seite=" title="Ãœber Uns">Ãœber Uns</a></li>
 	    <li <?php echo $class_drop; ?>><a href="#" title="News">News</a></li>
 	    <li <?php echo $class_drop; ?>><a href="#" title="Team">Team</a></li>
 	    <li <?php echo $class_drop; ?>><a href="#" title="Kunden">Kunden</a></li>
-	    <li <?php echo $class_drop; ?>><a href="#" title="Qualitätssicherung">Qualitätssicherung</a></li>
+	    <li <?php echo $class_drop; ?>><a href="#" title="QualitÃ¤tssicherung">Qualittssicherung</a></li>
 	</ul>
     </li>
     <li <?php echo $class_button; ?>><a href="#" title="Flyer">Flyer</a></li>
