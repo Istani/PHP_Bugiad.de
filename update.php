@@ -15,6 +15,6 @@
     fclose($tmp_file);
     
     system('git add .');
-    system('git commit -am "Aenderungen übernehmen"');
+    system('git commit -am "Aenderungen uebernehmen"');
     system('git push');
 ?>
