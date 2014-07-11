@@ -1,4 +1,7 @@
 <?php
+    ob_start();
+    include("update.php");
+    ob_end_clean();
     include("site/header.php");
 ?>
 </div>
