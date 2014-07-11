@@ -1,4 +1,6 @@
 <?php
+    // Komplettes Update
+    
     // Neue Git Daten hohlen 
     system('git pull');
     
@@ -13,8 +15,9 @@
     fwrite($tmp_file,"\n");
     fwrite($tmp_file,$tmp_text);
     fclose($tmp_file);
-    
+    // Changelog Änderungen hochladen um eine Saubere Version zu haben?
     system('git add .');
     system('git commit -am "Aenderungen uebernehmen"');
     system('git push');
+    
 ?>
