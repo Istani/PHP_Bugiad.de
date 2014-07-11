@@ -10,7 +10,7 @@
             }
             $exit['art']=$text_art;
             $exit['lfd']=$text_lfd;
-            $exit[$srpache]="Texterror (".$text_art.")";
+            $exit[$sprache]="Texterror (".$text_art.")";
             $datenbank->sql_insert_update("sta_texte", $exit);
         }
     }
