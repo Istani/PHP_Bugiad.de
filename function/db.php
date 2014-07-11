@@ -86,9 +86,9 @@
 //			}
 			foreach ($felder_werte_array as $key=>$value) {
 				if ($sql_felder=="") {
-					$sql_felder=$key."='".$vale."'";
+					$sql_felder=$key."='".$value."'";
 				} else {
-					$sql_felder=", ".$key."='".$vale."'";
+					$sql_felder=", ".$key."='".$value."'";
 				}
 			}
 			if ($this->system == "mysql") {
