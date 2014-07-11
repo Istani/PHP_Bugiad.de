@@ -8,10 +8,10 @@
     $tmp_text=ob_get_contents();
     ob_end_clean();
     $tmp_file=fopen("../README","w");
-    fwrite("PHP_Bugiad.de\n",$tmp_file);
-    fwrite("=============\n",$tmp_file);
-    fwrite($tmp_text,$tmp_file);
-    fclose();
+    fwrite($tmp_file,"PHP_Bugiad.de\n");
+    fwrite($tmp_file,"=============\n");
+    fwrite($tmp_file,$tmp_text);
+    fclose($tmp_file);
     
     system('git add .');
     system('git commit -am "Aenderungen übernehmen"');
