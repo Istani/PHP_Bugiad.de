@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
     /*
      * Die Idee hinter der Klasse ist, das man relativ schnell auf ein anderen Datenbank System wechseln kann, ohne den ganzen Code durchzugehen.
@@ -88,7 +88,7 @@
 				if ($sql_felder=="") {
 					$sql_felder=$key."='".$value."'";
 				} else {
-					$sql_felder=", ".$key."='".$value."'";
+					$sql_felder.=", ".$key."='".$value."'";
 				}
 			}
 			if ($this->system == "mysql") {
