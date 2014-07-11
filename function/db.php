@@ -61,7 +61,7 @@
 				} else {
 					$sql_string="SELECT ".$sql_felder." FROM ".$tabelle;
 				} 
-				if ($query=mysql_query($sql_string, $this->database)) {
+				if ($query=mysql_query($sql_string, $this->connection)) {
 					if (mysql_num_rows($query)>0) {
 						while ($row=mysql_fetch_assoc($query)) {
 							$return_array[]=$row;
@@ -93,7 +93,7 @@
 			}
 			if ($this->system == "mysql") {
 				$sql_string="INSERT INTO ".$tabelle." SET ".$sql_felder." ON DUPLICATE KEY UPDATE ".$sql_felder;
-				if ($query=mysql_query($sql_string, $this->database)) {
+				if ($query=mysql_query($sql_string, $this->connection)) {
 					$return=true;
 				} else {
 					$this->error("<b>Abfrage:</b> <i>"+$sql_string+"</i><br>Konnte nicht ausgeführt werden!<br>".mysql_error());
