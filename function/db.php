@@ -68,7 +68,7 @@
 						}
 					}
 				} else {
-					$this->error("<b>Abfrage:</b> <i>"+$sql_string+"</i><br>Konnte nicht ausgeführt werden!<br>".mysql_error());
+					$this->error("<b>Abfrage:</b> <i>"+$sql_string+"</i><br>Konnte nicht ausgeführt werden!<br>");
 				}
 			}
 			return $return_array;
@@ -96,7 +96,7 @@
 				if ($query=mysql_query($sql_string, $this->connection)) {
 					$return=true;
 				} else {
-					$this->error("<b>Abfrage:</b> <i>"+$sql_string+"</i><br>Konnte nicht ausgeführt werden!<br>".mysql_error());
+					$this->error("<b>Abfrage:</b> <i>"+$sql_string+"</i><br>Konnte nicht ausgeführt werden!<br>");
 				}
 			}
 			return $return;
