@@ -10,7 +10,7 @@
     $tmp_file=fopen("README","w");
     fwrite($tmp_file,"PHP_Bugiad.de\n");
     fwrite($tmp_file,"=============\n");
-    fwrite($tmp_file,"test\n");
+    fwrite($tmp_file,"\n");
     fwrite($tmp_file,$tmp_text);
     fclose($tmp_file);
     
