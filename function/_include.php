@@ -1,4 +1,4 @@
 <?php
     include("db.php");
-    include("texte.php");
+    include("database-functions.php");
 ?>

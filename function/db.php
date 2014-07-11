@@ -75,7 +75,7 @@
 		}
 		
 		function sql_insert_update($tabelle, $felder_werte_array) {
-			// Insert On Duplicate Key Update
+			// Insert or Upate
 			$sql_felder="";
 			$return=false;
 			if (!is_array($felder_werte_array)) {
