@@ -49,7 +49,7 @@
 					if ($sql_felder=="") {
 						$sql_felder=$vale;
 					} else {
-						$sql_felder.=', '.$value
+						$sql_felder.=', '.$value;
 					}
 				}
 			} else {
