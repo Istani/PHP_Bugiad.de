@@ -37,6 +37,9 @@
 		    <td>
 			<?php /*include("site/nav.php");*/ ?>
 		    </td>
+		    <td class="text_rechts">
+			<?php include("site/sprachwahl.php"); ?>
+		    </td>
 		</tr>
 	    </table>
 	</div>

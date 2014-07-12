@@ -40,7 +40,7 @@
 		    }
 		}
 		
-		function sql_select($tabelle, $felder="*", $where_string="") {
+		function sql_select($tabelle, $felder="*", $where_string="", $show_empty=false) {
 			// Select Abfrage
 			$sql_felder="";
 			$return_array=array();
@@ -65,6 +65,17 @@
 					if (mysql_num_rows($query)>0) {
 						while ($row=mysql_fetch_assoc($query)) {
 							$return_array[]=$row;
+						}
+					} else {
+						if ($show_empty) {
+							$sql_string="SHOW COLUMNS FROM ".$tabelle;
+							if ($query=mysql_query($sql_string, $this->connection)) {
+								while ($row=mysql_fetch_assoc($query)) {
+									$return_array[0][$row['Field']]="";
+								}
+							} else{
+								$this->error("<b>Abfrage:</b> <i>"+$sql_string+"</i><br>Konnte nicht ausgeführt werden!<br>");
+							}
 						}
 					}
 				} else {
