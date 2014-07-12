@@ -46,5 +46,12 @@
 	unset($new_get);
 	echo '<a href="' . $get_string . '"><li ' . $class_button . '>' . text("Adm_Menue", $i, $_SESSION['lang'], $database) . '</li></a>&nbsp;';
     ?>
+    <?php
+	$i++;
+	$new_get['action'] = "adm_export";
+	$get_string = generate_new_get($new_get, $_GET);
+	unset($new_get);
+	echo '<a href="' . $get_string . '"><li ' . $class_button . '>' . text("Adm_Menue", $i, $_SESSION['lang'], $database) . '</li></a>&nbsp;';
+    ?>
 </ul>
 <br><br>

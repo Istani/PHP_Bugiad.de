@@ -39,6 +39,23 @@
 	    }
 	}
 
+	function show_tables() {
+	    $return_array = array();
+	    if ($this->system == "mysql") {
+		$sql_string = "SHOW TABLE STATUS";
+		if ($query = mysql_query($sql_string, $this->connection)) {
+		    while ($row = mysql_fetch_assoc($query)) {
+			if ($row['Comment'] != "view") {
+			    $return_array[] = $row['Name'];
+			}
+		    }
+		} else {
+		    $this->error("<b>Abfrage:</b> <i>" + $sql_string + "</i><br>Konnte nicht ausgef?¼hrt werden!<br>");
+		}
+	    }
+	    return $return_array;
+	}
+
 	function sql_select($tabelle, $felder = "*", $where_string = "", $show_empty = false) {
 	    // Select Abfrage
 	    $sql_felder = "";

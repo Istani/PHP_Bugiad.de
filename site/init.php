@@ -11,6 +11,7 @@
 	$_SESSION['lang'] = $_GET['sprache'];
 	unset($_GET['sprache']);
     }
+    $settings['export_csv']['trennzeichen'] = ";";
 
     unset($fehler_meldung);
 

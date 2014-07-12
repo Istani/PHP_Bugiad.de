@@ -17,6 +17,9 @@
 	    case 'get_password':
 		$incpage = "content/user/get_password.php";
 		break;
+	    case 'adm_export':
+		$incpage = "scripte/export.php";
+		break;
 	    default:
 		$incpage = "content/welcome.php";
 	}

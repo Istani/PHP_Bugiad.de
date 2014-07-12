@@ -2,7 +2,7 @@
     include("site/init.php");
     include("function/_include.php");
 
-    include("site/init_bugiad.php");
+    include("site/init_project.php");
     include("site/incs.php");
 ?>
 
