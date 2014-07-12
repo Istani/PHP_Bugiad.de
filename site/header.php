@@ -1,6 +1,6 @@
 <?php
-	include("site/init.php");
-	include("function/_include.php");
+    include("site/init.php");
+    include("function/_include.php");
 ?>
 
 <!DOCTYPE html>
@@ -35,14 +35,14 @@
 			<img src="img/logo.jpg" class="logo">
 		    </td>
 		    <td>
-			<?php /*include("site/nav.php");*/ ?>
+			<?php /* include("site/nav.php"); */ ?>
 		    </td>
-		    <td class="text_rechts">
+		    <td class="text_rechts abstand_oben">
 			<?php include("site/sprachwahl.php"); ?>
 		    </td>
 		</tr>
 	    </table>
 	</div>
 	<div id="inhalt">
-	    
+
 

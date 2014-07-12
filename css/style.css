@@ -29,3 +29,6 @@
 .text_rechts {
     text-align: right;
 }
+.abstand_oben {
+    padding-top:5px;
+}
