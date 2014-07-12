@@ -32,3 +32,9 @@
 .abstand_oben {
     padding-top:5px;
 }
+.sprache_auswahl {
+    border-size: 1px;
+    border-style:solid;
+    border-color: #cccccc;
+    background-color: #cccccc;
+}
