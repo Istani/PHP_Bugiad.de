@@ -1,15 +1,23 @@
 <?php
 
     if (isset($_POST['submit_login'])) {
-	$login_array = $database->sql_select("sta_user", "user_id", "(user_email='" . $_POST['user_login'] . "' OR user_login='" . $_POST['user_login'] . "') AND user_password='" . pwd_code($_POST['user_pass']) . "'", false);
+	$login_array = $database->sql_select("sta_user", "user_id, user_status", "(user_email='" . $_POST['user_login'] . "' OR user_login='" . $_POST['user_login'] . "') AND user_password='" . pwd_code($_POST['user_pass']) . "'", false);
 	if (isset($login_array[0]['user_id'])) {
-	    $_SESSION['User_Id'] = $login_array[0]['user_id'];
+	    if ($login_array[0]['user_status'] > 0) {
+		$_SESSION['User_Id'] = $login_array[0]['user_id'];
+		$_SESSION['User_Status'] = $login_array[0]['user_status'];
+		$login_array[0]['user_lastlogin'] = time();
+		$database->sql_insert_update("sta_user", $login_array[0]);
+	    } else {
+		$fehler_meldung[] = "Login wurde noch nicht freigeschaltet!";
+	    }
 	} else {
 	    $fehler_meldung[] = "Fehlerhafter Login!";
 	}
     }
     if ($_GET['action'] == "logout") {
 	unset($_SESSION['User_Id']);
+	unset($_SESSION['User_Status']);
     }
 
     if (!isset($_SESSION['User_Id'])) {
@@ -21,7 +29,7 @@
 	}
 
 	echo '<form method="POST" action="' . $get_string . '">';
-	echo '<table>';
+	echo '<table width="100%">';
 	echo '<tr>';
 	echo '<td>';
 	echo text("Login", 1, $_SESSION['lang'], $database) . "&nbsp;";
@@ -56,7 +64,7 @@
 	echo '</table>';
 	echo '</form>';
     } else {
-	echo '<table>';
+	echo '<table width="100%">';
 	echo '<tr>';
 	echo '<td>';
 	$new_get['action'] = "my_konto";

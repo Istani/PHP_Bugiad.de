@@ -39,9 +39,9 @@
 			Version: <?php echo get_version(); ?>
 		    </td>
 		    <td>
-			<?php /* include("site/nav.php"); */ ?>
+			<?php include("site/nav.php"); ?>
 		    </td>
-		    <td class="text_rechts abstand_oben" width="20">
+		    <td class="text_rechts abstand_oben" width="300">
 			<?php include("site/sprachwahl.php"); ?><br><br>
 			<?php include("site/login.php"); ?>
 		    </td>
