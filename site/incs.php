@@ -20,6 +20,9 @@
 	    case 'adm_export':
 		$incpage = "scripte/export_mysql.php";
 		break;
+	    case 'adm_import':
+		$incpage = "scripte/import_webshop.php";
+		break;
 	    default:
 		$incpage = "content/welcome.php";
 	}
