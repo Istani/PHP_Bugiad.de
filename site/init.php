@@ -9,6 +9,8 @@
 	unset($_GET['sprache']);
     }
 
+    unset($fehler_meldung);
+
     // Böse Zeichen entfernen
     foreach ($_COOKIE as $key => $value) {
 	if (get_magic_quotes_gpc()) {

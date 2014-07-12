@@ -1,7 +1,25 @@
 <?php
 
-    if (!isset($_SESSION['KdNr'])) {
+    if (isset($_POST['submit_login'])) {
+	$login_array = $database->sql_select("sta_user", "user_id", "(user_email='" . $_POST['user_login'] . "' OR user_login='" . $_POST['user_login'] . "') AND user_password='" . pwd_code($_POST['user_pass']) . "'", false);
+	if (isset($login_array[0]['user_id'])) {
+	    $_SESSION['User_Id'] = $login_array[0]['user_id'];
+	} else {
+	    $fehler_meldung[] = "Fehlerhafter Login!";
+	}
+    }
+    if ($_GET['action'] == "logout") {
+	unset($_SESSION['User_Id']);
+    }
+
+    if (!isset($_SESSION['User_Id'])) {
 	$get_string = generate_get($_GET);
+	if ($_GET['action'] == "logout") {
+	    $new_get['action'] = "start";
+	    $get_string = generate_new_get($new_get, $_GET);
+	    unset($new_get);
+	}
+
 	echo '<form method="POST" action="' . $get_string . '">';
 	echo '<table>';
 	echo '<tr>';
@@ -22,7 +40,6 @@
 	echo '</tr>';
 	echo '<tr>';
 	echo '<td>';
-
 	$new_get['action'] = "get_konto";
 	$get_string = generate_new_get($new_get, $_GET);
 	unset($new_get);
@@ -36,8 +53,27 @@
 	echo '<input type="submit" name="submit_login" value="' . text("Login", 0, $_SESSION['lang'], $database) . '">';
 	echo '</td>';
 	echo '</tr>';
-
-
+	echo '</table>';
 	echo '</form>';
+    } else {
+	echo '<table>';
+	echo '<tr>';
+	echo '<td>';
+	$new_get['action'] = "my_konto";
+	$get_string = generate_new_get($new_get, $_GET);
+	unset($new_get);
+	echo '<a href="' . $get_string . '">' . text("My_Account", 0, $_SESSION['lang'], $database) . "</a>&nbsp;<br>";
+	$new_get['action'] = "my_bestellung";
+	$get_string = generate_new_get($new_get, $_GET);
+	unset($new_get);
+	echo '<a href="' . $get_string . '">' . text("New_Order", 0, $_SESSION['lang'], $database) . "</a>&nbsp;<br>";
+	echo '<br>';
+	$new_get['action'] = "logout";
+	$get_string = generate_new_get($new_get, $_GET);
+	unset($new_get);
+	echo '<a href="' . $get_string . '">' . text("Login", 99, $_SESSION['lang'], $database) . "</a>&nbsp;<br>";
+	echo '</td>';
+	echo '</tr>';
+	echo '</table>';
     }
 ?>

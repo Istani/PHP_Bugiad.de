@@ -9,7 +9,7 @@
     include("site/artikelgruppen.php");
     echo '</td>';
     echo '<td>';
-    echo text("Willkommen", 0, $_SESSION['lang'], $database);
+    include($incpage);
     echo '</td>';
     echo '</tr>';
     echo '<table>';
