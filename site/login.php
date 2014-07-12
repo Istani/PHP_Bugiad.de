@@ -17,9 +17,8 @@
     }
     if ($_GET['action'] == "logout") {
 	unset($_SESSION['User_Id']);
-	unset($_SESSION['User_Status']);
+	$_SESSION['User_Status'] = 0;
     }
-
     if (!isset($_SESSION['User_Id'])) {
 	$get_string = generate_get($_GET);
 	if ($_GET['action'] == "logout") {
@@ -74,7 +73,7 @@
 	$new_get['action'] = "my_bestellung";
 	$get_string = generate_new_get($new_get, $_GET);
 	unset($new_get);
-	echo '<a href="' . $get_string . '">' . text("New_Order", 0, $_SESSION['lang'], $database) . "</a>&nbsp;<br>";
+	echo '<a href="' . $get_string . '">' . text("My_Order", 0, $_SESSION['lang'], $database) . "</a>&nbsp;<br>";
 	echo '<br>';
 	$new_get['action'] = "logout";
 	$get_string = generate_new_get($new_get, $_GET);

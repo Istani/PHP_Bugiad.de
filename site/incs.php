@@ -22,5 +22,6 @@
 	}
     } else {
 	$incpage = "content/welcome.php";
+	$_GET['action'] = "willkommen";
     }
 ?>
