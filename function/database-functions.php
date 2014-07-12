@@ -7,7 +7,7 @@
 	    if ($text_array[0][$sprache] == "") { // Falls es z.b. einen DE Text gibt aber keinen ENG
 		$exit['art'] = $text_art;
 		$exit['lfd'] = $text_lfd;
-		$exit[$sprache] = "Texterror (" . $text_art . "/" . $sprache . ")";
+		$exit[$sprache] = "Texterror&nbsp;(" . $text_art . "/" . $sprache . ")";
 		$datenbank->sql_insert_update("sta_texte", $exit);
 		return $exit[$sprache];
 	    } else {
@@ -20,7 +20,7 @@
 	    }
 	    $exit['art'] = $text_art;
 	    $exit['lfd'] = $text_lfd;
-	    $exit[$sprache] = "Texterror (" . $text_art . "/" . $sprache . ")";
+	    $exit[$sprache] = "Texterror&nbsp;(" . $text_art . "/" . $sprache . ")";
 	    $datenbank->sql_insert_update("sta_texte", $exit);
 	    return $exit[$sprache];
 	}

@@ -6,16 +6,19 @@
     font-size: 14px;
     font-family: arial, sans-serif;
 }
+a {
+    color: blue;
+    text-decoration: underline;
+}
 
 
 #page-nav {
-    height: 85px;
     border-style: solid;
     vertical-align: bottom;
 }
 #inhalt {
     position:absolute;
-    top: 90px;
+    top: 130px;
     left:0px;
     right:0px;
     bottom:0px;

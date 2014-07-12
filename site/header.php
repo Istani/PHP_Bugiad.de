@@ -37,8 +37,9 @@
 		    <td>
 			<?php /* include("site/nav.php"); */ ?>
 		    </td>
-		    <td class="text_rechts abstand_oben">
-			<?php include("site/sprachwahl.php"); ?>
+		    <td class="text_rechts abstand_oben" width="20">
+			<?php include("site/sprachwahl.php"); ?><br><br>
+			<?php include("site/login.php"); ?>
 		    </td>
 		</tr>
 	    </table>

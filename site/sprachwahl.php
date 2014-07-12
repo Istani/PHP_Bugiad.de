@@ -10,9 +10,9 @@
 	} else {
 	    $erw = "";
 	}
-	$_GET['sprache'] = $key;
-	$get_string = generate_get_string($_GET);
-	unset($_GET['sprache']);
+	$new_get['sprache'] = $key;
+	$get_string = generate_new_get($new_get, $_GET);
+	unset($new_get);
 	echo '<a href="' . $get_string . '" class="' . $erw . '"><img src="img/flaggen/' . $key . '.png"></a>&nbsp;';
     }
 ?>
