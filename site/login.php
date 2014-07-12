@@ -15,7 +15,7 @@
     if (!isset($_SESSION['User_Id'])) {
 	$get_string = generate_get($_GET);
 	if ($_GET['action'] == "logout") {
-	    $new_get['action'] = "start";
+	    $new_get['action'] = "webshop";
 	    $get_string = generate_new_get($new_get, $_GET);
 	    unset($new_get);
 	}
