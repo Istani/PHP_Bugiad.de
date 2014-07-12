@@ -1,3 +1,3 @@
-kunde_luis;kunde_name1;kunde_name2;kunde_strasse;kunde_plz;kunde_ort;kunde_lkz;kunde_telefon;kunde_fax;kunde_preisliste;kunde_preisgruppe
-10108;Bugiad GmbH;;Carl-Borgward-Straße 20;56566;Neuwied;DE;0049 2631 / 384 - 113;0049 2631 / 384 - 107;10108;0
+kunde_luis|kunde_name1|kunde_name2|kunde_strasse|kunde_plz|kunde_ort|kunde_lkz|kunde_telefon|kunde_fax|kunde_preisliste|kunde_preisgruppe
+10108|Bugiad GmbH||Carl-Borgward-Straße 20|56566|Neuwied|DE|0049 2631 / 384 - 113|0049 2631 / 384 - 107|10108|0
 

@@ -14,7 +14,7 @@
 		} else {
 		    $inhalt = explode($settings['export_csv']['trennzeichen'], $line);
 		    if (trim($line) != "") {
-			foreach ($spalten as $key => $value) {
+			foreach ($inhalt as $key => $value) {
 			    $import_array[$spalten[$key]] = $inhalt[$key];
 			}
 			$database->sql_insert_update($tabellen_value, $import_array);
