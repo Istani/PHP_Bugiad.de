@@ -1,12 +1,13 @@
 <?php
 
-    //$settings['export_csv']['trennzeichen']
+    // $settings['export_csv']['trennzeichen']
+    // $sql_string = "SHOW TABLE STATUS";
 
     $tmp_tabellen = $database->show_tables();
     foreach ($tmp_tabellen as $tabellen_key => $tabellen_value) {
 	$tmp_inhalt = $database->sql_select($tabellen_value, "*", "", true);
 	$first_line = true;
-	$datei = fopen("export/" . $tabellen_value . ".csv", "w+");
+	$datei = fopen("export/mysql/" . $tabellen_value . ".csv", "w+");
 	foreach ($tmp_inhalt as $inhalt_key => $inhalt_value) {
 	    $tmp_ausgabe = "";
 	    if ($first_line) {
@@ -34,5 +35,8 @@
 	}
 	fclose($datei);
     }
+    $tmp_befehl = $settings['export_mysql']['dump_pfad'] . " -u " . $mysql['user'] . " -p" . $mysql['pw'] . " -h " . $mysql['host'] . " " . $mysql['db'] . " > export/mysql/MYSQL_STRUKTUR.sql";
+    //echo $tmp_befehl . '<br>';
+    system($tmp_befehl, $fp);
     echo 'Export OK';
 ?>

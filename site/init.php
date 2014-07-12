@@ -12,6 +12,7 @@
 	unset($_GET['sprache']);
     }
     $settings['export_csv']['trennzeichen'] = ";";
+    $settings['export_mysql']['dump_pfad'] = "mysqldump";
 
     unset($fehler_meldung);
 
