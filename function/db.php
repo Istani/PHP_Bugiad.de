@@ -15,7 +15,8 @@
 
 	function error($meldung) {
 	    // Ein einfaches DIE ist zwar unsch?¶n, aber erf?¼llt ohne Probleme seine Dienste...
-	    die($meldung);
+	    echo $meldung;
+	    die();
 	}
 
 	function db($system, $destination, $user = "", $password = "") {
@@ -34,7 +35,7 @@
 	    // Datenbank ausw?¤hlen
 	    if ($this->system == "mysql") {
 		if (!$this->database = mysql_select_db($database_name, $this->connection)) {
-		    $this->error("Keine Verbindung zur Datenbank m?¶glich!");
+		    $this->error("Keine Verbindung zur Datenbank moeglich!");
 		}
 	    }
 	}
@@ -50,7 +51,7 @@
 			}
 		    }
 		} else {
-		    $this->error("<b>Abfrage:</b> <i>" + $sql_string + "</i><br>Konnte nicht ausgef?¼hrt werden!<br>");
+		    $this->error("<b>Abfrage:</b> <i>" . $sql_string . "</i><br>Konnte nicht ausgefuehrt werden!<br>" . mysql_error());
 		}
 	    }
 	    return $return_array;
@@ -90,12 +91,12 @@
 				    $return_array[0][$row['Field']] = "";
 				}
 			    } else {
-				$this->error("<b>Abfrage:</b> <i>" + $sql_string + "</i><br>Konnte nicht ausgef?¼hrt werden!<br>");
+				$this->error("<b>Abfrage:</b> <i>" . $sql_string . "</i><br>Konnte nicht ausgef?¼hrt werden!<br>" . mysql_error());
 			    }
 			}
 		    }
 		} else {
-		    $this->error("<b>Abfrage:</b> <i>" + $sql_string + "</i><br>Konnte nicht ausgef?¼hrt werden!<br>");
+		    $this->error("<b>Abfrage:</b> <i>" . $sql_string . "</i><br>Konnte nicht ausgef?¼hrt werden!<br>" . mysql_error());
 		}
 	    }
 	    return $return_array;
@@ -106,11 +107,8 @@
 	    $sql_felder = "";
 	    $return = false;
 	    if (!is_array($felder_werte_array)) {
-		$this->error("<b>Programmfehler:</b><i>ID:10-T Fehler</i><br>Falsche Werte f?¼r INSERT Befehl!<br><pre>" . var_dump($felder_werte_array) . "</pre>");
+		$this->error("<b>Programmfehler:</b><i>ID:10-T Fehler</i><br>Falsche Werte f?¼r INSERT Befehl!<br><pre>" . var_dump($felder_werte_array) . "</pre>" . mysql_error());
 	    }
-//			if (!is_array($key_werte_array)) {
-//				$this->error("<b>Programmfehler:</b><i>ID:10T Fehler</i><br>Falsche Werte f?¼r UPDATE Befehl!<br><pre>".var_dump($key_werte_array)."</pre>");
-//			}
 	    foreach ($felder_werte_array as $key => $value) {
 		if ($sql_felder == "") {
 		    $sql_felder = $key . "='" . $value . "'";
@@ -123,7 +121,7 @@
 		if ($query = mysql_query($sql_string, $this->connection)) {
 		    $return = true;
 		} else {
-		    $this->error("<b>Abfrage:</b> <i>" + $sql_string + "</i><br>Konnte nicht ausgef?¼hrt werden!<br>");
+		    $this->error("<b>Abfrage:</b> <i>" . $sql_string . "</i><br>Konnte nicht ausgefuehrt werden!<br>" . mysql_error());
 		}
 	    }
 	    return $return;
