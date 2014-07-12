@@ -27,4 +27,9 @@
 	return $return;
     }
 
+    function get_version() {
+	$anzahl = count(file('README'));
+	return "0." . $anzahl;
+    }
+
 ?>

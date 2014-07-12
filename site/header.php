@@ -11,7 +11,7 @@
 	<meta name="robots" content="INDEX, FOLLOW">
 	<!--- Verschiedene Meta Werte !--->
 	<meta name="description" content="Bugiad - Fahrzeugteile in Neuwied, Ersatzteile, OE-Teile">
-	<meta name="keywords" content="gasfeder, gasfedern, lÃ¼fterkupplungen, skoda, vag">
+	<meta name="keywords" content="gasfeder, gasfedern, l?¼fterkupplungen, skoda, vag">
 	<meta name="author" content="Sascha Kaufmann">
 	<meta name="publisher" content="Bugiad">
 	<meta name="copyright" content="Bugiad">
@@ -32,7 +32,8 @@
 	    <table width="100%">
 		<tr>
 		    <td>
-			<img src="img/logo.jpg" class="logo">
+			<img src="img/logo.jpg" class="logo"><br>
+			Version: <?php echo get_version(); ?>
 		    </td>
 		    <td>
 			<?php /* include("site/nav.php"); */ ?>

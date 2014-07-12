@@ -17,6 +17,6 @@
     fclose($tmp_file);
     // Changelog Ã„nderungen hochladen um eine Saubere Version zu haben?
     system('git add .');
-    system('git commit -am "Aenderungen uebernehmen"');
+    system('git commit -am "UPDATE: Aenderungen uebernehmen"');
     //system('git push'); //Klappt bei mir im Windows nicht, später nach schauen!
 ?>
