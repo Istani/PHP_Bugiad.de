@@ -118,6 +118,7 @@
 	    }
 	    if ($this->system == "mysql") {
 		$sql_string = "INSERT INTO " . $tabelle . " SET " . $sql_felder . " ON DUPLICATE KEY UPDATE " . $sql_felder;
+		echo $sql_string . '<br>';
 		if ($query = mysql_query($sql_string, $this->connection)) {
 		    $return = true;
 		} else {

@@ -1,6 +1,7 @@
 <?php
 
     session_start();
+    set_time_limit(0);
     if (!isset($_SESSION['lang'])) {
 	$_SESSION['lang'] = "DE";
     }

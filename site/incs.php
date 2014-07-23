@@ -22,6 +22,7 @@
 		break;
 	    case 'adm_import':
 		$incpage = "scripte/import_webshop.php";
+		$incpage = "scripte/import_csv.php";
 		break;
 	    default:
 		$incpage = "content/welcome.php";
