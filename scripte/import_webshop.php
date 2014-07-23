@@ -28,5 +28,5 @@
 	    unset($import_array);
 	}
     }
-    echo 'Import OK';
+    echo 'Import OK<br>';
 ?>

@@ -53,14 +53,7 @@
     ?>
     <?php
 	$i = 7;
-	$new_get['action'] = "adm_export";
-	$get_string = generate_new_get($new_get, $_GET);
-	unset($new_get);
-	echo '<a href="' . $get_string . '">' . text("Adm_Menue", $i, $_SESSION['lang'], $database) . '</a> &nbsp;';
-    ?>
-    <?php
-	$i = 8;
-	$new_get['action'] = "adm_import";
+	$new_get['action'] = "adm_update";
 	$get_string = generate_new_get($new_get, $_GET);
 	unset($new_get);
 	echo '<a href="' . $get_string . '">' . text("Adm_Menue", $i, $_SESSION['lang'], $database) . '</a> &nbsp;';

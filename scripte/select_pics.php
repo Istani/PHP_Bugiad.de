@@ -18,4 +18,5 @@
 	    }
 	}
     }
+    echo 'Bilder zugeordnet OK<br>';
 ?>

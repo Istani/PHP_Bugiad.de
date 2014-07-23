@@ -38,5 +38,5 @@
     $tmp_befehl = $settings['export_mysql']['dump_pfad'] . " -u " . $mysql['user'] . " -p" . $mysql['pw'] . " -h " . $mysql['host'] . " " . $mysql['db'] . " > export/mysql/MYSQL_STRUKTUR.sql";
     //echo $tmp_befehl . '<br>';
     system($tmp_befehl, $fp);
-    echo 'Export OK';
+    echo 'Export OK<br>';
 ?>

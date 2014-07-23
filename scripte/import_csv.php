@@ -58,4 +58,5 @@
 	unset($inhalt);
 	unset($import_array);
     }
+    echo 'Import CSV OK<br>';
 ?>

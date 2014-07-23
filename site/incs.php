@@ -20,13 +20,8 @@
 	    case 'adm_text':
 		$incpage = "content/admin/texte.php";
 		break;
-	    case 'adm_export':
-		$incpage = "scripte/export_mysql.php";
-		break;
-	    case 'adm_import':
-		$incpage = "scripte/import_webshop.php";
-		$incpage = "scripte/import_csv.php";
-		$incpage = "scripte/select_pics.php";
+	    case 'adm_update':
+		$incpage = "update.php";
 		break;
 	    default:
 		$incpage = "content/welcome.php";

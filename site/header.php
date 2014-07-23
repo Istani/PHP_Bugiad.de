@@ -1,9 +1,9 @@
 <?php
-    include("site/init.php");
-    include("function/_include.php");
+    include_once("site/init.php");
+    include_once("function/_include.php");
 
-    include("site/init_project.php");
-    include("site/incs.php");
+    include_once("site/init_project.php");
+    include_once("site/incs.php");
 ?>
 
 <!DOCTYPE html>
@@ -41,11 +41,11 @@
 			Version: <?php echo get_version(); ?>
 		    </td>
 		    <td>
-			<?php include("site/nav.php"); ?>
+			<?php include_once("site/nav.php"); ?>
 		    </td>
 		    <td class="text_rechts abstand_oben" width="300">
-			<?php include("site/sprachwahl.php"); ?><br><br>
-			<?php include("site/login.php"); ?>
+			<?php include_once("site/sprachwahl.php"); ?><br><br>
+			<?php include_once("site/login.php"); ?>
 		    </td>
 		</tr>
 	    </table>
