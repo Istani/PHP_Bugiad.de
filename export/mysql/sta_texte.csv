@@ -1,13 +1,539 @@
 art|lfd|ulfd|DE|ENG
-Adm_Menue|1|0|Texterror&nbsp;(Adm_Menue[1]/DE)|
-Adm_Menue|2|0|Texterror&nbsp;(Adm_Menue[2]/DE)|
-Adm_Menue|3|0|Texterror&nbsp;(Adm_Menue[3]/DE)|
-Adm_Menue|4|0|Texterror&nbsp;(Adm_Menue[4]/DE)|
-Adm_Menue|5|0|Texterror&nbsp;(Adm_Menue[5]/DE)|
-Adm_Menue|6|0|Texterror&nbsp;(Adm_Menue[6]/DE)|
-Adm_Menue|7|0|Texterror&nbsp;(Adm_Menue[7]/DE)|
-Adm_Menue|8|0|Texterror&nbsp;(Adm_Menue[8]/DE)|
-Login|99|0|Texterror&nbsp;(Login[99]/DE)|
-My_Account|0|0|Texterror&nbsp;(My_Account[0]/DE)|
-My_Order|0|0|Texterror&nbsp;(My_Order[0]/DE)|
-Sprachwahl|0|0|Texterror&nbsp;(Sprachwahl[0]/DE)|
+Adm_Menue|1|0|Benutzer|
+Adm_Menue|2|0|Texte/Sprache|
+Adm_Menue|3|0|Artikelstamm|
+Adm_Menue|4|0|Produktgruppen|
+Adm_Menue|5|0|Artikel Layout|
+Adm_Menue|6|0|Preisstamm|
+Adm_Menue|7|0|DB: Export|
+Adm_Menue|8|0|DB: Import|
+Adm_Menue|9|0|Texterror&nbsp;(Adm_Menue[9][0]/DE)|
+artikel_gruppe|1|0|Abgasanlage|
+artikel_gruppe|1|1|Abgasrohr|
+artikel_gruppe|1|2|Dichtring, Abgasrohr|
+artikel_gruppe|1|3|Dichtung, Abgasrohr|
+artikel_gruppe|1|4|Endschalldämpfer|
+artikel_gruppe|1|5|Halter, Abgasanlage|
+artikel_gruppe|1|6|Halter, Schalldämpfer|
+artikel_gruppe|1|7|Vorschalldämpfer|
+artikel_gruppe|2|0|Abgasrückführung|
+artikel_gruppe|2|1|AGR-Ventil|
+artikel_gruppe|2|2|Druckwandler, Abgassteuerung|
+artikel_gruppe|2|3|Ventil, AGR-Abgassteuerung|
+artikel_gruppe|3|0|Achsantrieb|
+artikel_gruppe|3|1|Gelenkwelle, Achsantrieb|
+artikel_gruppe|3|2|Lager, Antriebswelle|
+artikel_gruppe|3|3|Lager, Gelenkwellenmittellager|
+artikel_gruppe|4|0|Anhängevorrichtung|
+artikel_gruppe|4|1|Unterfahrschutz, Anhängevorrichtung|
+artikel_gruppe|5|0|Automatikgetriebe|
+artikel_gruppe|5|1|Dichtung, Ölwanne-Automatikgetriebe|
+artikel_gruppe|5|2|Halter, Automatikgetriebeaufhängung|
+artikel_gruppe|5|3|Hydraulikfilter, Automatikgetriebe|
+artikel_gruppe|5|4|Lagerung, Automatikgetriebe|
+artikel_gruppe|5|5|Lagerung, Automatikgetriebeträger|
+artikel_gruppe|5|6|Ölwanne, Automatikgetriebe|
+artikel_gruppe|6|0|Beleuchtung|
+artikel_gruppe|6|1|Blende, Nebelscheinwerfer|
+artikel_gruppe|6|2|Glühlampe, Hauptscheinwerfer|
+artikel_gruppe|6|3|Glühlampe, Nebelscheinwerfer|
+artikel_gruppe|6|4|Halter, Hauptscheinwerfer|
+artikel_gruppe|6|5|Hauptscheinwerfer|
+artikel_gruppe|6|6|Heckblende|
+artikel_gruppe|6|7|Heckleuchte|
+artikel_gruppe|6|8|Innenraumleuchte|
+artikel_gruppe|6|9|Kennzeichenleuchte|
+artikel_gruppe|6|10|Leseleuchte|
+artikel_gruppe|6|11|Nebelscheinwerfer|
+artikel_gruppe|6|12|Rahmen, Hauptscheinwerfer|
+artikel_gruppe|6|13|Reflektor, Nebelscheinwerfer|
+artikel_gruppe|6|14|Rückstrahler|
+artikel_gruppe|6|15|Schalter, Hauptlicht|
+artikel_gruppe|6|16|Schalter, Nebellicht|
+artikel_gruppe|6|17|Schalter, Nebelschlußleuchte|
+artikel_gruppe|6|18|Schalter, Rückfahrleuchte|
+artikel_gruppe|6|19|Scheinwerferaufnahme, Beleuchtung|
+artikel_gruppe|6|20|Schlußleuchte|
+artikel_gruppe|6|21|Stellelement, Leuchtweiteregulierung|
+artikel_gruppe|6|22|Streuscheibe, Hauptscheinwerfer|
+artikel_gruppe|7|0|Beleuchtung, Universal|
+artikel_gruppe|7|1|Schalter, Hauptlicht|
+artikel_gruppe|7|2|Schalter, Nebelschlußleuchte|
+artikel_gruppe|7|3|Schalter, Rückfahrleuchte|
+artikel_gruppe|7|4|Seitenmarkierungsleuchte|
+artikel_gruppe|8|0|Bordnetz|
+artikel_gruppe|8|1|Sicherungskasten|
+artikel_gruppe|9|0|Bremsanlage|
+artikel_gruppe|9|1|Ausgleichsbehälter, Bremsflüssigkeit|
+artikel_gruppe|9|2|Bremsbackensatz|
+artikel_gruppe|9|3|Bremsbackensatz, Feststellbremse|
+artikel_gruppe|9|4|Bremskraftverstärker|
+artikel_gruppe|9|5|Bremssattel|
+artikel_gruppe|9|6|Bremsscheibe|
+artikel_gruppe|9|7|Bremsschlauch|
+artikel_gruppe|9|8|Bremstrommel|
+artikel_gruppe|9|9|Dichtung, Unterdruckpumpe|
+artikel_gruppe|9|10|Dichtungssatz, Bremssattel|
+artikel_gruppe|9|11|Führungsbolzen, Bremssattel|
+artikel_gruppe|9|12|Führungshülsensatz, Bremssattel|
+artikel_gruppe|9|13|Handbremshebel|
+artikel_gruppe|9|14|Hauptbremszylinder|
+artikel_gruppe|9|15|Kolben, Bremssattel|
+artikel_gruppe|9|16|Radbremszylinder|
+artikel_gruppe|9|17|Reparatursatz, Bremssattel|
+artikel_gruppe|9|18|Seilzug, Feststellbremse|
+artikel_gruppe|9|19|Sensor, Raddrehzahl|
+artikel_gruppe|9|20|Steuergerät, Brems-/Fahrdynamik|
+artikel_gruppe|9|21|Unterdruckpumpe, Bremsanlage|
+artikel_gruppe|9|22|Warnkontakt, Bremsbelagverschleiß|
+artikel_gruppe|10|0|Druckluftanlage|
+artikel_gruppe|10|1|Schnellkupplung|
+artikel_gruppe|11|0|Fahrerhaus|
+artikel_gruppe|11|1|Frontklappenschloss|
+artikel_gruppe|11|2|Halter, Kotflügel|
+artikel_gruppe|11|3|Halter, Sonnenblende|
+artikel_gruppe|11|4|Innenspiegel|
+artikel_gruppe|11|5|Seilzug, Klappenentriegelung-Staukasten|
+artikel_gruppe|11|6|Spiegelglas, Außenspiegel|
+artikel_gruppe|12|0|Federung/Dämpfung|
+artikel_gruppe|12|1|Anschlagpuffer, Federung|
+artikel_gruppe|12|2|Buchse, Stossdämpfer|
+artikel_gruppe|12|3|Fahrwerksfeder|
+artikel_gruppe|12|4|Federteller|
+artikel_gruppe|12|5|Schutzkappe/Faltenbalg, Stoßdämpfer|
+artikel_gruppe|12|6|Stoßdämpfer|
+artikel_gruppe|13|0|Gemischaufbereitung|
+artikel_gruppe|13|1|Drehzahlsensor, Motormanagement|
+artikel_gruppe|13|2|Gaszug|
+artikel_gruppe|13|3|Klopfsensor|
+artikel_gruppe|13|4|Lambdasonde|
+artikel_gruppe|13|5|Sensor, Gaspedalstellung|
+artikel_gruppe|13|6|Sensor, Ladedruck|
+artikel_gruppe|13|7|Sensor, Nockenwellenposition|
+artikel_gruppe|13|8|Sensor, Saugrohrdruck|
+artikel_gruppe|13|9|Steuergerät, Motormanagement|
+artikel_gruppe|14|0|Generator|
+artikel_gruppe|14|1|Generator|
+artikel_gruppe|14|2|Generatorfreilauf|
+artikel_gruppe|14|3|Generatorregler|
+artikel_gruppe|14|4|Reparatursatz, Generator|
+artikel_gruppe|14|5|Riemenscheibe, Generator|
+artikel_gruppe|15|0|Geschwindigkeitsregelanlage|
+artikel_gruppe|15|1|Schalter, Kupplungsbetätigung (GRA)|
+artikel_gruppe|16|0|Glühanlage|
+artikel_gruppe|16|1|Glühkerze|
+artikel_gruppe|17|0|Heizung/Lüftung|
+artikel_gruppe|17|1|Bedienelement, Heizung/Lüftung|
+artikel_gruppe|17|2|Filter, Innenraumluft|
+artikel_gruppe|17|3|Gebläseschalter, Heizung/Lüftung|
+artikel_gruppe|17|4|Innenraumgebläse|
+artikel_gruppe|17|5|Kühlmittelregelventil|
+artikel_gruppe|17|6|Wärmetauscher, Innenraumheizung|
+artikel_gruppe|17|7|Widerstand, Innenraumgebläse|
+artikel_gruppe|18|0|Heizung/Lüftung, Universal|
+artikel_gruppe|18|1|Filter, Innenraumluft|
+artikel_gruppe|19|0|Innenausstattung|
+artikel_gruppe|19|1|Armaturenbrett|
+artikel_gruppe|19|2|Aschenbecher|
+artikel_gruppe|19|3|Fensterheber|
+artikel_gruppe|19|4|Fensterkurbel|
+artikel_gruppe|19|5|Gasfeder, Sitzverstellung|
+artikel_gruppe|19|6|Gleitbacke, Fensterheber|
+artikel_gruppe|19|7|Luftdüse, Armaturenbrett|
+artikel_gruppe|19|8|Sonnenblende|
+artikel_gruppe|19|9|Türgriff, Innenausstattung|
+artikel_gruppe|20|0|Instrumente|
+artikel_gruppe|20|1|Drehzahlmesser|
+artikel_gruppe|20|2|Lenkstockschalter|
+artikel_gruppe|20|3|Schalter, Handbremskontrolleuchte|
+artikel_gruppe|20|4|Sensor, Drehzahl|
+artikel_gruppe|20|5|Sensor, Geschwindigkeit|
+artikel_gruppe|20|6|Sensor, Wegstrecke|
+artikel_gruppe|20|7|Tachowelle|
+artikel_gruppe|21|0|Karosserie|
+artikel_gruppe|21|1|Abdeckung, Außenspiegel|
+artikel_gruppe|21|2|Abdeckung, Außenspiegelhalter|
+artikel_gruppe|21|3|Abdeckung, Griffmulde|
+artikel_gruppe|21|4|Außenspiegel|
+artikel_gruppe|21|5|Blende, Kühlergitter|
+artikel_gruppe|21|6|Blende, Stoßfänger|
+artikel_gruppe|21|7|Dichtung, Frontscheibe|
+artikel_gruppe|21|8|Dichtung, Heckscheibe|
+artikel_gruppe|21|9|Frontverkleidung|
+artikel_gruppe|21|10|Gasfeder, Heckscheibe|
+artikel_gruppe|21|11|Gasfeder, Koffer-/Laderaum|
+artikel_gruppe|21|12|Gasfeder, Motorhaube|
+artikel_gruppe|21|13|Gasfeder, Reserveradhalter|
+artikel_gruppe|21|14|Halter, Stoßfänger|
+artikel_gruppe|21|15|Hilfsrahmen/Aggregateträger|
+artikel_gruppe|21|16|Innenspiegel|
+artikel_gruppe|21|17|Kennzeichenhalter|
+artikel_gruppe|21|18|Klappe, Abschlepphaken|
+artikel_gruppe|21|19|Koffer-/Laderaumdeckel|
+artikel_gruppe|21|20|Kotflügel|
+artikel_gruppe|21|21|Kühlergitter|
+artikel_gruppe|21|22|Kühlergittereinsatz|
+artikel_gruppe|21|23|Lüftungsgitter, Stoßfänger|
+artikel_gruppe|21|24|Motorabdeckung|
+artikel_gruppe|21|25|Motorhaube|
+artikel_gruppe|21|26|Motorhaubenzug|
+artikel_gruppe|21|27|Motorraumdämmung|
+artikel_gruppe|21|28|Querträger|
+artikel_gruppe|21|29|Radhaus|
+artikel_gruppe|21|30|Rahmen, Kühlergitter|
+artikel_gruppe|21|31|Rollenführung, Schiebetür|
+artikel_gruppe|21|32|Scharnier, Motorhaube|
+artikel_gruppe|21|33|Scheinwerferaufnahme|
+artikel_gruppe|21|34|Schwellerverkleidung|
+artikel_gruppe|21|35|Spiegelglas, Außenspiegel|
+artikel_gruppe|21|36|Spoiler|
+artikel_gruppe|21|37|Stoßfänger|
+artikel_gruppe|21|38|Stütze, Kühlergitter|
+artikel_gruppe|21|39|Träger, Stoßfänger|
+artikel_gruppe|21|40|Türdichtung|
+artikel_gruppe|21|41|Türfeststeller|
+artikel_gruppe|21|42|Türscharnier|
+artikel_gruppe|21|43|Verkleidung, Radhaus|
+artikel_gruppe|21|44|Zier-/Schutzleiste, Frontverkleidung|
+artikel_gruppe|21|45|Zier-/Schutzleiste, Kühlergitter|
+artikel_gruppe|21|46|Zier-/Schutzleiste, Stoßfänger|
+artikel_gruppe|21|47|Zier-/Schutzleiste, Tür|
+artikel_gruppe|22|0|Klimaanlage|
+artikel_gruppe|22|1|Druckschalter, Klimaanlage|
+artikel_gruppe|22|2|Kompressor, Klimaanlage|
+artikel_gruppe|22|3|Kondensator, Klimaanlage|
+artikel_gruppe|22|4|Lüfter, Klimakondensator|
+artikel_gruppe|22|5|Sensor, Außentemperatur|
+artikel_gruppe|22|6|Sensor, Kühlmitteltemperatur|
+artikel_gruppe|22|7|Verdampfer, Klimaanlage|
+artikel_gruppe|22|8|Vorwiderstand, Klimalüfter|
+artikel_gruppe|23|0|Klimaanlage, Universal|
+artikel_gruppe|23|1|Verdampfer, Klimaanlage|
+artikel_gruppe|24|0|Komfortsysteme|
+artikel_gruppe|24|1|Elektromotor, Fensterheber|
+artikel_gruppe|24|2|Schalter, Fensterheber|
+artikel_gruppe|24|3|Schalter, Spiegelverstellung|
+artikel_gruppe|24|4|Schalter, Tankklappenentriegelung|
+artikel_gruppe|24|5|Sensor, Einparkhilfe|
+artikel_gruppe|25|0|Kommunikations-/Informationssysteme|
+artikel_gruppe|25|1|Antenne|
+artikel_gruppe|26|0|Kraftstoffförderanlage|
+artikel_gruppe|26|1|Kraftstofffilter|
+artikel_gruppe|26|2|Kraftstoff-Fördereinheit|
+artikel_gruppe|26|3|Kraftstofffördermodul|
+artikel_gruppe|26|4|Kraftstoffleitung|
+artikel_gruppe|26|5|Kraftstoffpumpe|
+artikel_gruppe|26|6|Relais, Kraftstoffpumpe|
+artikel_gruppe|26|7|Sensor, Kraftstoffvorrat|
+artikel_gruppe|26|8|Ventil, Kraftstofffilter|
+artikel_gruppe|26|9|Verschluß, Kraftstoffbehälter|
+artikel_gruppe|27|0|Kraftstoffförderanlage, Universal|
+artikel_gruppe|27|1|Verschluß, Kraftstoffbehälter|
+artikel_gruppe|28|0|Kühlung|
+artikel_gruppe|28|1|Ausgleichsbehälter, Kühlmittel|
+artikel_gruppe|28|2|Elektromotor, Kühlerlüfter|
+artikel_gruppe|28|3|Halter, Kühlerlüfter|
+artikel_gruppe|28|4|Kühler, Motorkühlung|
+artikel_gruppe|28|5|Kühlerschlauch|
+artikel_gruppe|28|6|Kühlmittelflansch|
+artikel_gruppe|28|7|Kühlmittelrohrleitung|
+artikel_gruppe|28|8|Kupplung, Kühlerlüfter|
+artikel_gruppe|28|9|Lager, Lüfterwelle-Motorkühlung|
+artikel_gruppe|28|10|Lüfter, Motorkühlung|
+artikel_gruppe|28|11|Lüfterrad, Motorkühlung|
+artikel_gruppe|28|12|Lüfterring|
+artikel_gruppe|28|13|Rahmen, Motorkühler|
+artikel_gruppe|28|14|Sensor, Kühlmitteltemperatur|
+artikel_gruppe|28|15|Steuergerät, Elektrolüfter (Motorkühlung)|
+artikel_gruppe|28|16|Temperaturschalter, Kühlerlüfter|
+artikel_gruppe|28|17|Thermostat, Kühlmittel|
+artikel_gruppe|28|18|Thermostatgehäuse|
+artikel_gruppe|28|19|Verschlußdeckel, Kühlmittelbehälter|
+artikel_gruppe|28|20|Wasserpumpe|
+artikel_gruppe|28|21|Zusatzwasserpumpe|
+artikel_gruppe|29|0|Kühlung, Universal|
+artikel_gruppe|29|1|Halter, Kühlerlüfter|
+artikel_gruppe|29|2|Temperaturschalter, Kühlerlüfter|
+artikel_gruppe|30|0|Kupplung|
+artikel_gruppe|30|1|Ausrückgabel, Kupplung|
+artikel_gruppe|30|2|Ausrücklager|
+artikel_gruppe|30|3|Ausrückteller, Kupplung|
+artikel_gruppe|30|4|Deckel, Kupplungsgehäuse|
+artikel_gruppe|30|5|Führungshülse, Kupplung|
+artikel_gruppe|30|6|Geberzylinder, Kupplung|
+artikel_gruppe|30|7|Kupplungsdruckplatte|
+artikel_gruppe|30|8|Kupplungssatz|
+artikel_gruppe|30|9|Kupplungsscheibe|
+artikel_gruppe|30|10|Nehmerzylinder, Kupplung|
+artikel_gruppe|30|11|Seilzug, Kupplungsbetätigung|
+artikel_gruppe|30|12|Zentralausrücker, Kupplung|
+artikel_gruppe|31|0|Kurbelgehäuse|
+artikel_gruppe|31|1|Ölabscheider, Kurbelgehäuseentlüftung|
+artikel_gruppe|31|2|Schlauch, Kurbelgehäuseentlüftung|
+artikel_gruppe|31|3|Ventil, Kurbelgehäuseentlüftung|
+artikel_gruppe|31|4|Zylinderlaufbuchsensatz|
+artikel_gruppe|32|0|Kurbeltrieb|
+artikel_gruppe|32|1|Distanzscheibe, Kurbelwelle|
+artikel_gruppe|32|2|Kolben|
+artikel_gruppe|32|3|Kolbenbolzen, Kurbeltrieb|
+artikel_gruppe|32|4|Kolbenring|
+artikel_gruppe|32|5|Kolbenringsatz|
+artikel_gruppe|32|6|Kurbelwelle|
+artikel_gruppe|32|7|Kurbelwellenlager|
+artikel_gruppe|32|8|Kurbelwellenlagersatz|
+artikel_gruppe|32|9|Lagerbuchse, Pleuel|
+artikel_gruppe|32|10|Schwungrad|
+artikel_gruppe|32|11|Wellendichtring, Kurbelwelle|
+artikel_gruppe|32|12|Zahnkranz, Schwungrad|
+artikel_gruppe|33|0|Lenkung|
+artikel_gruppe|33|1|Ausgleichsbehälter, Hydrauliköl-Servolenkung|
+artikel_gruppe|33|2|Axialgelenk, Spurstange|
+artikel_gruppe|33|3|Faltenbalg, Lenkung|
+artikel_gruppe|33|4|Faltenbalgsatz, Lenkung|
+artikel_gruppe|33|5|Flansch, Lenksäule|
+artikel_gruppe|33|6|Hydraulikpumpe, Lenkung|
+artikel_gruppe|33|7|Lagerung, Lenkgetriebe|
+artikel_gruppe|33|8|Lenkgetriebe|
+artikel_gruppe|33|9|Lenkrad|
+artikel_gruppe|33|10|Lenkwelle|
+artikel_gruppe|33|11|Lenkwinkelsensor|
+artikel_gruppe|33|12|Lenkzwischenhebel|
+artikel_gruppe|33|13|Riemenscheibe, Servopumpe|
+artikel_gruppe|33|14|Spurstange|
+artikel_gruppe|33|15|Spurstangenkopf|
+artikel_gruppe|33|16|Steuergerät, Servolenkung|
+artikel_gruppe|34|0|Luftversorgung|
+artikel_gruppe|34|1|Ansaugschlauch, Luftfilter|
+artikel_gruppe|34|2|Drosselklappenstutzen|
+artikel_gruppe|34|3|Ladeluftkühler|
+artikel_gruppe|34|4|Ladeluftschlauch|
+artikel_gruppe|34|5|Lader, Aufladung|
+artikel_gruppe|34|6|Luftfilter|
+artikel_gruppe|34|7|Saugrohr, Luftversorgung|
+artikel_gruppe|34|8|Sportluftfiltersystem|
+artikel_gruppe|34|9|Stellelement, Drallklappen (Saugrohr)|
+artikel_gruppe|34|10|Steuerklappe, Luftversorgung|
+artikel_gruppe|35|0|Motoraufhängung|
+artikel_gruppe|35|1|Anschlagpuffer, Motoraufhängung|
+artikel_gruppe|35|2|Halter, Motoraufhängung|
+artikel_gruppe|35|3|Lagerung, Motor|
+artikel_gruppe|36|0|Motorsteuerung|
+artikel_gruppe|36|1|Auslaßventil|
+artikel_gruppe|36|2|Dichtung, Steuergehäuse|
+artikel_gruppe|36|3|Einlaßventil|
+artikel_gruppe|36|4|Nockenwelle|
+artikel_gruppe|36|5|Nockenwellenversteller|
+artikel_gruppe|36|6|Schlepphebel, Motorsteuerung|
+artikel_gruppe|36|7|Spanner, Steuerkette|
+artikel_gruppe|36|8|Steuerkette|
+artikel_gruppe|36|9|Steuerventil, Nockenwellenverstellung|
+artikel_gruppe|36|10|Ventilstößel|
+artikel_gruppe|36|11|Wellendichtring, Nockenwelle|
+artikel_gruppe|36|12|Zahnrad, Kurbelwelle|
+artikel_gruppe|36|13|Zahnrad, Nockenwelle|
+artikel_gruppe|37|0|Normteile|
+artikel_gruppe|37|1|Dichtring|
+artikel_gruppe|37|2|Kreuzgelenk|
+artikel_gruppe|37|3|Schraube|
+artikel_gruppe|37|4|Tellerscheibe|
+artikel_gruppe|37|5|Verschlußschraube|
+artikel_gruppe|38|0|Radantrieb|
+artikel_gruppe|38|1|Achsmutter, Antriebswelle|
+artikel_gruppe|38|2|Anlaufscheibe, Außenplanetengetriebe|
+artikel_gruppe|38|3|Antriebswelle|
+artikel_gruppe|38|4|Faltenbalg, Antriebswelle|
+artikel_gruppe|38|5|Faltenbalgsatz, Antriebswelle|
+artikel_gruppe|38|6|Gelenk, Antriebswelle|
+artikel_gruppe|38|7|Gelenksatz, Antriebswelle|
+artikel_gruppe|38|8|Steckwelle, Differential|
+artikel_gruppe|38|9|Zwischenlager, Antriebswelle|
+artikel_gruppe|39|0|Radaufhängung|
+artikel_gruppe|39|1|Achskörper|
+artikel_gruppe|39|2|Achsschenkel, Radaufhängung|
+artikel_gruppe|39|3|Achszapfen, Achskörper|
+artikel_gruppe|39|4|Federbeinstützlager|
+artikel_gruppe|39|5|Halter, Querlenkerlagerung|
+artikel_gruppe|39|6|Lagerbock, Achskörper|
+artikel_gruppe|39|7|Lagerbuchse, Stabilisator|
+artikel_gruppe|39|8|Lagerung, Achskörper|
+artikel_gruppe|39|9|Lagerung, Achsträger|
+artikel_gruppe|39|10|Lagerung, Lenker|
+artikel_gruppe|39|11|Lagerung, Radlagergehäuse|
+artikel_gruppe|39|12|Lagerung, Stabilisator|
+artikel_gruppe|39|13|Lenker, Radaufhängung|
+artikel_gruppe|39|14|Lenkersatz, Radaufhängung|
+artikel_gruppe|39|15|Nadellager, Achskörper|
+artikel_gruppe|39|16|Radlager|
+artikel_gruppe|39|17|Radlagersatz|
+artikel_gruppe|39|18|Radnabe|
+artikel_gruppe|39|19|Reparatursatz, Federbeinstützlager|
+artikel_gruppe|39|20|Reparatursatz, Stabilisatorlager|
+artikel_gruppe|39|21|Sicherungsblech, Trag-/Führungsgelenk|
+artikel_gruppe|39|22|Stange/Strebe, Radaufhängung|
+artikel_gruppe|39|23|Stange/Strebe, Stabilisator|
+artikel_gruppe|39|24|Trag-/Führungsgelenk|
+artikel_gruppe|39|25|Wälzlager, Federbeinstützlager|
+artikel_gruppe|39|26|Wellendichtring, Radlager|
+artikel_gruppe|39|27|Wellendichtring, Radnabe|
+artikel_gruppe|40|0|Räder|
+artikel_gruppe|40|1|Felge|
+artikel_gruppe|40|2|Zierblende, Räder|
+artikel_gruppe|41|0|Riementrieb|
+artikel_gruppe|41|1|Abdeckung, Zahnriemen|
+artikel_gruppe|41|2|Keilrippenriemen|
+artikel_gruppe|41|3|Riemenscheibe, Kurbelwelle|
+artikel_gruppe|41|4|Riemenspanner, Keilrippenriemen|
+artikel_gruppe|41|5|Riemenspanner, Zahnriemen|
+artikel_gruppe|41|6|Schwingungsdämpfer, Keilrippenriemen|
+artikel_gruppe|41|7|Schwingungsdämpfer, Zahnriemen|
+artikel_gruppe|41|8|Spannarm, Keilrippenriemen|
+artikel_gruppe|41|9|Spannrolle, Keilrippenriemen|
+artikel_gruppe|41|10|Spannrolle, Zahnriemen|
+artikel_gruppe|41|11|Umlenk-/Führungsrolle, Keilriemen|
+artikel_gruppe|41|12|Umlenk-/Führungsrolle, Keilrippenriemen|
+artikel_gruppe|41|13|Umlenk-/Führungsrolle, Zahnriemen|
+artikel_gruppe|41|14|Zahnriemen|
+artikel_gruppe|41|15|Zahnriemensatz|
+artikel_gruppe|42|0|Schaltgetriebe|
+artikel_gruppe|42|1|Buchse, Wähl-/Schaltstange|
+artikel_gruppe|42|2|Dichtung, Schaltgehäuse-Getriebe|
+artikel_gruppe|42|3|Flanschdeckel, Schaltgetriebe|
+artikel_gruppe|42|4|Gehäuse, Schaltgetriebe|
+artikel_gruppe|42|5|Gelenk, Schaltstange|
+artikel_gruppe|42|6|Lager, Schaltgetriebe|
+artikel_gruppe|42|7|Lagerung, Schaltgetriebe|
+artikel_gruppe|42|8|Lagerung, Schaltgetriebeträger|
+artikel_gruppe|42|9|Reparatursatz, Schalthebel|
+artikel_gruppe|42|10|Schaltgetriebe|
+artikel_gruppe|42|11|Schalthebel|
+artikel_gruppe|42|12|Schalthebelknauf|
+artikel_gruppe|42|13|Schalthebelverkleidung|
+artikel_gruppe|42|14|Seilzug, Schaltgetriebe|
+artikel_gruppe|42|15|Wähl-/Schaltstange|
+artikel_gruppe|42|16|Wellendichtring, Schaltgetriebe|
+artikel_gruppe|43|0|Scheibenreinigung|
+artikel_gruppe|43|1|Relais, Wisch-Wasch-Intervall|
+artikel_gruppe|43|2|Verschluß, Waschwasserbehälter|
+artikel_gruppe|43|3|Waschwasserbehälter, Scheibenreinigung|
+artikel_gruppe|43|4|Waschwasserdüse, Scheibenreinigung|
+artikel_gruppe|43|5|Waschwasserpumpe, Scheibenreinigung|
+artikel_gruppe|43|6|Wischarm, Scheibenreinigung|
+artikel_gruppe|43|7|Wischblatt|
+artikel_gruppe|43|8|Wischergestänge|
+artikel_gruppe|43|9|Wischermotor|
+artikel_gruppe|43|10|Wischerschalter|
+artikel_gruppe|44|0|Scheibenreinigung, Universal|
+artikel_gruppe|44|1|Relais, Wisch-Wasch-Intervall|
+artikel_gruppe|45|0|Schließanlage|
+artikel_gruppe|45|1|Abdeckkappe, Türgriff|
+artikel_gruppe|45|2|Griff, Motorhaubenentriegelung|
+artikel_gruppe|45|3|Heckklappenschloß|
+artikel_gruppe|45|4|Lenkschloß|
+artikel_gruppe|45|5|Motorhaubenschloß|
+artikel_gruppe|45|6|Schalter, Türverriegelung|
+artikel_gruppe|45|7|Schließzylinder|
+artikel_gruppe|45|8|Schließzylinder, Zündschloß|
+artikel_gruppe|45|9|Schloßsatz, Schließanlage|
+artikel_gruppe|45|10|Seilzug, Türentriegelung|
+artikel_gruppe|45|11|Stellelement, Zentralverriegelung|
+artikel_gruppe|45|12|Steuergerät, Zentralverriegelung|
+artikel_gruppe|45|13|Türgriff|
+artikel_gruppe|45|14|Türgriffbetätigung|
+artikel_gruppe|45|15|Türschloß|
+artikel_gruppe|46|0|Schmierung|
+artikel_gruppe|46|1|Deckel, Ölfiltergehäuse|
+artikel_gruppe|46|2|Dichtung, Ölwanne|
+artikel_gruppe|46|3|Kette, Ölpumpenantrieb|
+artikel_gruppe|46|4|Kettenspanner, Ölpumpenantrieb|
+artikel_gruppe|46|5|Öldruckschalter|
+artikel_gruppe|46|6|Ölfilter|
+artikel_gruppe|46|7|Ölkühler, Motoröl|
+artikel_gruppe|46|8|Ölpeilstab|
+artikel_gruppe|46|9|Ölpumpe|
+artikel_gruppe|46|10|Ölschlauch|
+artikel_gruppe|46|11|Ölwanne|
+artikel_gruppe|46|12|Sensor, Motorölstand|
+artikel_gruppe|46|13|Trichter, Ölpeilstab|
+artikel_gruppe|47|0|Sekundärlufteinblasung|
+artikel_gruppe|47|1|Sekundärluftpumpe|
+artikel_gruppe|48|0|Sicherheitssysteme, Universal|
+artikel_gruppe|48|1|Alarmanlage|
+artikel_gruppe|49|0|Signalanlage|
+artikel_gruppe|49|1|Blinkerschalter|
+artikel_gruppe|49|2|Blinkleuchte|
+artikel_gruppe|49|3|Bremslichtschalter|
+artikel_gruppe|49|4|Fanfare|
+artikel_gruppe|49|5|Warnblinkschalter|
+artikel_gruppe|49|6|Zusatzbremsleuchte|
+artikel_gruppe|50|0|Startanlage|
+artikel_gruppe|50|1|Deckel, Batteriekasten|
+artikel_gruppe|50|2|Einrückhebel, Starter|
+artikel_gruppe|50|3|Freilaufgetriebe, Starter|
+artikel_gruppe|50|4|Relais, Starter|
+artikel_gruppe|50|5|Starter|
+artikel_gruppe|50|6|Zünd-/Startschalter|
+artikel_gruppe|51|0|Vergaser|
+artikel_gruppe|51|1|Anschlußstutzen, Kühlmittelleitung|
+artikel_gruppe|51|2|Flansch, Vergaser|
+artikel_gruppe|51|3|Gasabscheider, Vergaser|
+artikel_gruppe|51|4|Pulldowndose, Vergaser|
+artikel_gruppe|51|5|Schwimmer, Vergaser|
+artikel_gruppe|51|6|Ventil, Vergaser|
+artikel_gruppe|51|7|Vergaser|
+artikel_gruppe|51|8|Vordrosselsteller, Vergaser|
+artikel_gruppe|52|0|Werkzeug, fahrzeugspezifisch|
+artikel_gruppe|52|1|Reparatursatz, Bremssattel-Führungsgewinde|
+artikel_gruppe|53|0|Zubehör, Universal|
+artikel_gruppe|53|1|Schmutzfänger|
+artikel_gruppe|54|0|Zündanlage|
+artikel_gruppe|54|1|Impulsgeber, Kurbelwelle|
+artikel_gruppe|54|2|Ritzel, Zündverteiler|
+artikel_gruppe|54|3|Schaltgerät, Zündanlage|
+artikel_gruppe|54|4|Sensor, Zündimpuls|
+artikel_gruppe|54|5|Zündkerze|
+artikel_gruppe|54|6|Zündleitungssatz|
+artikel_gruppe|54|7|Zündspule|
+artikel_gruppe|54|8|Zündverteiler|
+artikel_gruppe|54|9|Zündverteilerkappe|
+artikel_gruppe|54|10|Zündverteilerläufer|
+artikel_gruppe|55|0|Zylinderkopf|
+artikel_gruppe|55|1|Dichtring, Ventilschaft|
+artikel_gruppe|55|2|Dichtung, Abgaskrümmer|
+artikel_gruppe|55|3|Dichtung, Ansaugkrümmer|
+artikel_gruppe|55|4|Dichtung, Zylinderkopf|
+artikel_gruppe|55|5|Dichtung, Zylinderkopfhaube|
+artikel_gruppe|55|6|Dichtungssatz, Zylinderkopf|
+artikel_gruppe|55|7|Schlauch, Zylinderkopfhaubenentlüftung|
+artikel_gruppe|55|8|Ventilführung|
+artikel_gruppe|55|9|Verschluß, Öleinfüllstutzen|
+artikel_gruppe|55|10|Zylinderkopf|
+artikel_gruppe|55|11|Zylinderkopfschraube|
+artikel_gruppe|56|0|Universal|
+artikel_gruppe|56|1|Abdeckung|
+artikel_gruppe|56|2|Anker|
+artikel_gruppe|56|3|Bolzen|
+artikel_gruppe|56|4|Buchse|
+artikel_gruppe|56|5|Deckel|
+artikel_gruppe|56|6|Düse|
+artikel_gruppe|56|7|Halter|
+artikel_gruppe|56|8|Hülse|
+artikel_gruppe|56|9|Kappe|
+artikel_gruppe|56|10|Lager|
+artikel_gruppe|56|11|Lagerschale|
+artikel_gruppe|56|12|Membran|
+artikel_gruppe|56|13|Sensor, Wegstrecke|
+artikel_gruppe|56|14|Steuergerät|
+artikel_gruppe|56|15|Ventil|
+artikel_gruppe|56|16|Wellendichtring|
+Login|0|0|Login|
+Login|1|0|Benutzername|
+Login|2|0|Passwort|
+Login|99|0|Ausloggen|
+Logout_Text|0|0|Ausloggen|
+Logout_Text|1|0|Sie wurden ausgeloggt|
+My_Account|0|0|Mein Konto|
+My_Order|0|0|Meine Bestellungen|
+New_Account|0|0|Neues&nbsp;Konto&nbsp;beantragen|
+New_Password|0|0|Passwort&nbsp;vergessen|
+Sprachwahl|0|0|Sprache|
+Willkommen|0|0|Willkommen auf Bugiad.de|
