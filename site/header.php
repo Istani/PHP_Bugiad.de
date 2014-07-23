@@ -20,14 +20,14 @@
 	<meta name="copyright" content="Bugiad">
 	<meta name="revosot-after" content="3 Days">
 	<!--- JS/CSS Fremd !--->
-	<style type="text/javascript" src="js/jquery-1.10.2.js"></style>
-	<style type="text/javascript" src="js/jquery-ui-1.10.4.custom.js"></style>
-	<style type="text/javascript" src="jquery.flip.js"></style>
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.js"></script>
+	<script type="text/javascript" src="jquery.flip.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/nav.css">
 	<link rel="stylesheet" type="text/css" href="css/custom-theme/jquery-ui-1.10.4.custom.css">
 	<!--- Favicon, CSS, JS - Eigene !--->
 	<link rel="shortcut icon" href="favicon.ico">
-	<style type="text/javascript" src="js/scripts.js"></style>
+	<script type="text/javascript" src="js/scripts.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>

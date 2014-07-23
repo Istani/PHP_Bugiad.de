@@ -7,7 +7,7 @@
 		if ($return_string == "") {
 		    $return_string = "?" . $key . "=" . $value;
 		} else {
-		    $return_string = "&" . $key . "=" . $value;
+		    $return_string = $return_string . "&" . $key . "=" . $value;
 		}
 	    }
 	}

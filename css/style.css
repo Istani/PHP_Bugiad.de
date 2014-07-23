@@ -8,17 +8,18 @@
 }
 a {
     color: blue;
-    text-decoration: underline;
+    text-decoration: none;
+    text-underline: none;
 }
 
 
 #page-nav {
-    border-style: solid;
+    margin: 5px;
     vertical-align: bottom;
 }
 #inhalt {
     position:absolute;
-    top: 130px;
+    top: 120px;
     left:0px;
     right:0px;
     bottom:0px;
@@ -44,4 +45,28 @@ a {
 
 .artikel_box {
     display: inline-block;
+}
+
+.blau{
+    background-color: #2771BA;
+}
+.grau {
+    background-color: #333333;
+}
+.artikelgruppen {
+    padding-left: 15px;
+    border: 1px solid #aaaaaa;
+    margin-bottom: 1px;
+    margin-left: 5px;
+    margin-right: 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.artikeluntergruppen {
+    padding-left: 15px;
+    border: 1px solid #aaaaaa;
+    margin: 1px 0px;
+}
+a .artikeluntergruppen {
+    color: #FFFFFF;
 }
