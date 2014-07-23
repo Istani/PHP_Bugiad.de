@@ -21,9 +21,11 @@
 	<meta name="revosot-after" content="3 Days">
 	<!--- JS/CSS Fremd !--->
 	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/jquery.dataTables.js"></script>
 	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.js"></script>
-	<script type="text/javascript" src="jquery.flip.js"></script>
+	<script type="text/javascript" src="js/jquery.flip.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
 	<link rel="stylesheet" type="text/css" href="css/custom-theme/jquery-ui-1.10.4.custom.css">
 	<!--- Favicon, CSS, JS - Eigene !--->
 	<link rel="shortcut icon" href="favicon.ico">

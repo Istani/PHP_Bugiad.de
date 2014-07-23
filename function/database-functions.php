@@ -6,7 +6,7 @@
 	if ($text_array[0][$sprache] == "") { // Falls es keinen Text gibt
 	    $exit['art'] = $text_art;
 	    $exit['lfd'] = $text_lfd;
-	    $exit[$sprache] = "Texterror&nbsp;(" . $text_art . "[" . $text_lfd . "]/" . $sprache . ")";
+	    $exit[$sprache] = "Texterror&nbsp;(" . $text_art . "[" . $text_lfd . "][" . $ulfd . "]/" . $sprache . ")";
 	    $datenbank->sql_insert_update("sta_texte", $exit);
 	    return $exit[$sprache];
 	} else {

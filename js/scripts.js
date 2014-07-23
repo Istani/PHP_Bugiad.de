@@ -1,12 +1,14 @@
 $(document).ready(function() {
-    /*Nav*/
-    $('li').mouseover(function() {
-	var $id = $(this).attr('id');
-	$('#' + $id + ' ul').css('display', 'block');
+    $(".dataTable").dataTable({
+	"bPaginate": false,
+	"bLengthChange": false,
+	"bFilter": true,
+	"bSort": true,
+	"bInfo": false,
+	"bAutoWidth": true,
+//	    "language": {
+//		"url": "js/jquery.dataTables/de_DE.txt"
+//	    }
+
     });
-    $('li').mouseout(function() {
-	var $id = $(this).attr('id');
-	$('#' + $id + ' ul').css('display', 'none');
-    });
-    /* Nav Ende */
 });

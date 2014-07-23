@@ -34,7 +34,7 @@
     //Artikel Gruppen (Neu Import)
     $datei_name = "upload/import_csv/artikel_gruppen.csv";
     if (file_exists($datei_name)) {
-	$database->sql_delete("sta_texte", "art='artikel_gruppe'");
+	//$database->sql_delete("sta_texte", "art='artikel_gruppe'");
 	$first_line = true;
 	$datei = fopen($datei_name, "r");
 	while (!feof($datei)) {

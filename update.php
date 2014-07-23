@@ -1,5 +1,16 @@
 <?php
 
+    include("site/init.php");
+    include("function/_include.php");
+
+    include("site/init_project.php");
+    include("scripte/export.php");
+    include("scripte/import_webshop.php");
+    include("scripte/import_csv.php");
+
+    include("scripte/select_pics.php");
+
+
     // Komplettes Update
     // Neue Git Daten hohlen
     system('git pull');
