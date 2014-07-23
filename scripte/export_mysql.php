@@ -19,7 +19,7 @@
 			$tmp_ausgabe = $tmp_ausgabe . $settings['export_csv']['trennzeichen'] . $tmp_key;
 		    }
 		}
-		fwrite($datei, $tmp_ausgabe . "\r\n");
+		fwrite($datei, utf8_decode($tmp_ausgabe) . "\r\n");
 		$tmp_ausgabe = "";
 		$first_line = false;
 	    }

@@ -102,6 +102,17 @@
 	    return $return_array;
 	}
 
+	function sql_delete($tabelle, $where_string) {
+	    $return_bool = false;
+	    if ($this->system == "mysql") {
+		$sql_string = "DELETE FROM " . $tabelle . " WHERE " . $where_string;
+		if ($query = mysql_query($sql_string, $this->connection)) {
+		    $return_bool = true;
+		}
+	    }
+	    return $return_bool;
+	}
+
 	function sql_insert_update($tabelle, $felder_werte_array) {
 	    // Insert or Upate
 	    $sql_felder = "";
@@ -110,6 +121,11 @@
 		$this->error("<b>Programmfehler:</b><i>ID:10-T Fehler</i><br>Falsche Werte f?¼r INSERT Befehl!<br><pre>" . var_dump($felder_werte_array) . "</pre>" . mysql_error());
 	    }
 	    foreach ($felder_werte_array as $key => $value) {
+		if (get_magic_quotes_gpc()) {
+		    $value = stripslashes($value);
+		}
+		$value = mysql_real_escape_string($value);
+		$value = utf8_encode($value);
 		if ($sql_felder == "") {
 		    $sql_felder = $key . "='" . $value . "'";
 		} else {
@@ -118,7 +134,6 @@
 	    }
 	    if ($this->system == "mysql") {
 		$sql_string = "INSERT INTO " . $tabelle . " SET " . $sql_felder . " ON DUPLICATE KEY UPDATE " . $sql_felder;
-		echo $sql_string . '<br>';
 		if ($query = mysql_query($sql_string, $this->connection)) {
 		    $return = true;
 		} else {
